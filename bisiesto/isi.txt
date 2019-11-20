@@ -1,0 +1,15 @@
+1. Identificar el Software Under Test.
+esBisiesto (int anio)
+2. Identificar los parámetros del SUT.
+año
+
+3.
+    b1: multiplo de 4 y no divisible entre 100
+    b2: multiplo de 4 y divisble de 400
+    b3:invalido
+
+4.
+    b1: 2016
+    b2: 2000
+    b3: -2015
+

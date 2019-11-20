@@ -1,0 +1,15 @@
+1. Identificar el Software Under Test.
+PrecioFinal(double precioOriginal, double porcentajeDescuento)
+2. Identificar los parámetros del SUT.
+precioOriginal, porcentajeDescuento, fecha.
+
+3.
+    b1: que sea 29
+    b2: que no sea 29
+    b3: numero negativo
+
+4.
+    b1: 29/11/2019.
+    b2: 3/11/2019, 28/11,2019
+    b3: -4 
+
