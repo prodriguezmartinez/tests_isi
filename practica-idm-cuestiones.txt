@@ -1,0 +1,104 @@
+1. Identificar el Software Under Test
+
+--- Bisiestos
+    esBisiesto (int anio)
+
+--- RomanNumeral
+    En la clase RomanNumeral el método "public int convierte(String s)"
+
+--- Embotelladora
+    En la clase Embotelladora el metodo "public int calculaBotellasPequenas(int pequenas, int grandes, int total)"
+
+--- BlackFriday
+    PrecioFinal(double precioOriginal, double porcentajeDescuento)
+
+
+2. Identificar los parámetros del SUT
+
+--- Bisiestos
+    año
+
+--- RomanNumeral
+    El string S representa el numero romano el cual queremos convertir a base 10.
+
+--- Embotelladora
+    int pequenas: numero de botellas pequeñas de 1L disponibles.
+    int grandes: numero de botellas grandes de 5L disponibles.
+    int total: volumen total a repartir entre las botellas minimizando pequeñas.
+
+--- BlackFriday
+    precioOriginal, porcentajeDescuento, fecha.
+
+3. Utilizando la técnica de la modelización de las entradas, crear caracterizaciones basadas en la funcionalidad, y sus particiones en bloques.
+
+--- Bisiestos
+      b1: multiplo de 4 y no divisible entre 100
+      b2: multiplo de 4 y divisble de 400
+      b3:invalido
+
+--- RomanNumeral
+    Caracterización q1 = “Correspondencia entre romanos y decimales”:
+
+      b1: I = 1
+      b2: V = 5
+      b3: X = 10
+      b4: L = 50
+      b5: C = 100
+      b6: D = 500
+      b7: M = 1000
+      b8: Numero compuesto de varias letras
+      b9: Resto de letras no existen como numero romano.
+
+--- Embotelladora
+    Caracterización q1 = "Total de litros que queremos embotellar y botellas disponibles":
+
+    b1: misma cantidad de botellas grandes, pequeñas y volumen a embotellar.
+    b2: menor cantidad de grandes respecto pequeñas y volumen total.
+    b3: menos pequeñas y grandes respecto total.
+    b4: no tenemos grandes.
+    b5: 1 parametro negativo.
+    b6: 2 parametros negativos.
+    b7: 3 parametros negativos.
+
+--- BlackFriday
+
+    b1: que sea 29
+    b2: que no sea 29
+    b3: numero negativo
+
+4.
+--- Bisiesto
+
+    b1: 2016
+    b2: 2000
+    b3: -2015
+
+--- RomanNumeral
+    Caracterización q1 = “Correspondencia entre romanos y decimales”:
+
+      b1: I
+      b2: V
+      b3: X
+      b4: L
+      b5: C
+      b6: D
+      b7: M
+      b8: MMCDLXXXIV
+      b9: Z
+
+--- Embotelladora
+
+    b1: 5,5,5
+    b2: 20,5,39
+    b3: 2,1,10
+    b4: 10,0,10
+    b5: -2,1,10
+    b6: -2,-1,10
+    b7: -2,-1,-10
+
+--- BlackFriday
+
+    b1: 29/11/2019.
+    b2: 3/11/2019, 28/11,2019
+    b3: -4 
+
